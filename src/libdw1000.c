@@ -62,11 +62,11 @@ void dwInit(dwDevice_t* dev, dwOps_t* ops)
 
   /* Device default state */
   dev->extendedFrameLength = FRAME_LENGTH_NORMAL;
-  dev->pacSize = PAC_SIZE_8;
+  dev->pacSize = PAC_SIZE_32;
   dev->pulseFrequency = TX_PULSE_FREQ_16MHZ;
-  dev->dataRate = TRX_RATE_6800KBPS;
-  dev->preambleLength = TX_PREAMBLE_LEN_128;
-  dev->preambleCode = PREAMBLE_CODE_16MHZ_4;
+  dev->dataRate = TRX_RATE_110KBPS;
+  dev->preambleLength = TX_PREAMBLE_LEN_1024;
+  dev->preambleCode = PREAMBLE_CODE_16MHZ_3;
   dev->channel = CHANNEL_5;
   dev->smartPower = false;
   dev->frameCheck = true;
